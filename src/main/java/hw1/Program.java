@@ -1,14 +1,13 @@
 package hw1;
 
-import hw1.client.Client;
-import hw1.server.ServerWindow;
+import hw1.client.ClientGUI;
+import hw1.server.ServerGUI;
+
 
 public class Program {
     public static void main(String[] args) {
-        ServerWindow serverWindow = new ServerWindow();
-
-        new Client(serverWindow);
-        new Client(serverWindow);
-
+        ServerGUI serverGUI = new ServerGUI();
+        new ClientGUI(serverGUI);
+        new ClientGUI(serverGUI);
     }
 }
